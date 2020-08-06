@@ -1,0 +1,207 @@
+*, *::before, *::after{
+box-sizing: border-box;
+}
+body{
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  height: 100%;
+}
+.my-logo{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+/* Style des onglets */
+.onglet {
+  overflow: hidden;
+}
+
+/* Style des boutons affichant le contenu */
+.onglet button {
+  background-color: #FB5007;
+  color:white;
+  float:left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 50px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+/* Changer la couleur de fond des boutons au survol */
+.onglet button:hover {
+  background-color: #FB5007;
+
+  box-shadow: 0 12px 16px 30px #000000, 30px 17px 50px 0 #000000;
+}
+.onglet button:hover not button .active{
+  color: #FB5007;
+}
+
+/* Créer la classe "active" pour l'onglet en cours */
+.onglet button.active {
+  background-color: #000000;
+}
+
+/* Style du contenu de l'onglet */
+.ongletContenu {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  height: 100%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 213px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+/* *********** MAIN CONTENT ******************* */
+
+h2{/*  pour tous les h2 */
+  color:#FB5007;
+  text-align: center;
+}
+
+/* ****** section accueil ******** */
+.onglet-accueil{
+  display:flex;
+  align-items: center;
+}
+.salutation{
+  margin-left: 150px;
+}
+.profile-container{ /* centré horizontalement */
+  align-items: center;
+  margin-top: 7px;
+  width: 250px;
+}
+
+.mon-profil-accueil{/* bordure à la place de bg-color*/
+  border: 20px solid #FB5007;
+  border-radius: 100%;
+}
+
+/* ****** section experiences, études et contact ******** */
+
+.onglet-experience
+.onglet-etudes
+.onglet-contact{
+  margin-bottom: 70px;
+  margin-left: 50px;
+  text-align: justify;
+}
+.section-periode{
+  float: left;
+  font-weight: bold;
+  font-size: 20px;
+  border:3px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  width:300px;
+  padding-left: 40px;
+  color: #FB5007;
+}
+.duree{
+  font-weight: bold;
+  font-style: normal;
+  font-size:16px;
+  color:black;
+}
+.date{
+  color: #FB5007;
+}
+.section-droite{
+  margin-left:20px;
+  margin-top: 20px;
+  width: 1680px;
+  border:3px solid #FB5007;
+  border-radius: 10px;
+  text-align: center;
+}
+.titre{
+  font-weight: bold;
+  font-size:20px;
+  color:#FB5007;
+}
+.sous-section-annonce{
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+}
+.section-formulaire{
+  display:flex;
+  align-items: flex-start;
+  background-color: #FB5007;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 2px;
+  border:3px solid #FB5007;
+  border-radius: 10px;
+  text-align: center;
+min-height: 214px;
+width: 442px;
+}
+.onglet-contact p{
+  display:flex;
+  align-items: flex-start;
+  color: black;
+  font-size: 16px;
+}
+.mon-profil-contact{
+  border: 20px solid #FB5007;
+  width:250px;
+  border-radius: 100%;
+}
+.flex{
+  display: flex;
+}
+input[type-text],input[type-email],input[type-message]{
+  display: block;
+}
+
+/* FOOTER  */
+footer{
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 70px;
+  margin-top: 13px;
+  background-color: black;
+
+}
+
+.phone{
+  position: absolute;
+  top: -5px;
+  left: 16px;
+}
+
+.linkedIn-icone{
+  position: absolute;
+  top: 8px;
+  right: 182px;
+}
+
+.twitter-icone{
+  position: absolute;
+  top: 8px;
+  right: 115px;
+}
+
+.facebook-icone{
+  position: absolute;
+  top: 8px;
+  right: 50px;
+}
