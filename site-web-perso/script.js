@@ -18,3 +18,5 @@ function ouvrirOnglet(evt, nomOnglet) {
   document.getElementById(nomOnglet).style.display = "block";
   evt.currentTarget.className += " active";
 }
+// Pointerl'élément qui a comme id="ouvertParDéfaut" et cliquez dessus
+document.getElementById("ouvertParDéfaut").click();

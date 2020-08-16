@@ -17,7 +17,7 @@
     </a>
     <!-- Tab links -->
     <div class="onglet">
-      <button class="ongletLinks" onclick="ouvrirOnglet(event, 'accueil')">ACCUEIL</button>
+      <button class="ongletLinks" onclick="ouvrirOnglet(event, 'accueil')" id="ouvertParDéfaut">ACCUEIL</button>
       <button class="ongletLinks" onclick="ouvrirOnglet(event, 'experiences')">EXPERIENCES</button>
       <button class="ongletLinks" onclick="ouvrirOnglet(event, 'etudes')">ETUDES</button>
       <button class="ongletLinks" onclick="ouvrirOnglet(event, 'contact')">CONTACT</button>
@@ -112,7 +112,7 @@
             <p>Nous sommes disponibles pour réaliser vos:<br>
               Sites web, ERP, Applications ...</p>
           </div>
-          <div class="section-formulaire">
+          <div class="formConteneur">
             <form action="https://formspree.io/xoqkrjlp" method="POST">
               <label for="name">Nom</label>
               <input type="text" name="name">
@@ -120,7 +120,7 @@
               <input type="email" name="_replyto">
               <label for="mail">Message</label>
               <textarea name="message"></textarea>
-              <input type="submit" value="Send">
+              <input type="submit" value="Envoyer">
             </form>
           </div>
         </div>
@@ -136,6 +136,7 @@
     <div class="phone">
       <h4>+32 466 475 602</h4>
     </div>
+
     <div class="linkedIn-icone">
       <a href="./." class="mon-icon">
         <img src="img/Vector-linkedIn-icône.png">
@@ -151,7 +152,6 @@
         <img src="img/Facebook-icon.png">
       </a>
     </div>
-
   </footer>
   <!--FIN MAIN CONTENT-->
   <script src="script.js"></script>
